@@ -1,8 +1,23 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# coding=utf-8
 #安装python3和pip
 #安装以下sdk模块
 #pip install aliyun-python-sdk-core-v3
+#python2.x
+#pip install aliyun-python-sdk-core
+
 #pip install aliyun-python-sdk-slb
+#pip install aliyun-python-sdk-ecs
+import sys
+import json
+import argparse
+from aliyunsdkcore.client import AcsClient
+from aliyunsdkslb.request.v20140515 import DescribeLoadBalancersRequest
+from aliyunsdkslb.request.v20140515 import DescribeLoadBalancerAttributeRequest
+from aliyunsdkslb.request.v20140515.RemoveBackendServersRequest import RemoveBackendServersRequest 
+from aliyunsdkslb.request.v20140515.AddBackendServersRequest import AddBackendServersRequest
+from aliyunsdkslb.request.v20140515.SetBackendServersRequest import SetBackendServersRequest
+from aliyunsdkecs.request.v20140526.DescribeInstancesRequest import DescribeInstancesRequest
 import sys
 import json
 import argparse
