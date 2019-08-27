@@ -57,7 +57,7 @@ def help_doc():
     print(slbinfo)
 
 def get_ecs_instance(ip):
-    request = DescribeInstancesRequest.DescribeInstancesRequest()
+    request = DescribeInstancesRequest()
     request.set_accept_format('json')
     request.add_query_param('RegionId','cn-beijing')
     request.add_query_param('PrivateIpAddresses',[str(ip)])
