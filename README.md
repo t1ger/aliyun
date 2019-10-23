@@ -37,9 +37,9 @@ optional arguments:
 
 增加主机 ./alislb.py -a instance ip  weight
 
-更新解析 ./alislb.py -u instance ip  weight
+更新权重 ./alislb.py -u instance ip  weight
 
-获取解析 ./alislb.py -g instance
+获取实例 ./alislb.py -g instance
 
-删除解析 ./alislb.py -d instance ip
+删除主机 ./alislb.py -d instance ip
 
